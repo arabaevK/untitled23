@@ -8,16 +8,16 @@ public class Main {
         System.out.println(generateRanodmAge());
         System.out.println(rec(generateRanodmAge(), 24));
         System.out.println("-------------------------");
-        System.out.println(rec(-45, 30));
+        System.out.println(rec(generateRanodmAge(), 30));
         System.out.println("-------------------------");
 
-        System.out.println(rec(25, 40));
+        System.out.println(rec(generateRanodmAge(), 40));
         System.out.println("-------------------------");
 
-        System.out.println(rec(-20, 15));
+        System.out.println(rec(generateRanodmAge(), 15));
         System.out.println("-------------------------");
 
-        System.out.println(rec(80, 50));
+        System.out.println(rec(generateRanodmAge(), 50));
 
 
     }
@@ -39,6 +39,7 @@ public class Main {
         }
         return toy1;
     }
+
     public static int generateRanodmAge(){
         Random random = new Random();
         int randomNum = random.nextInt(100);
